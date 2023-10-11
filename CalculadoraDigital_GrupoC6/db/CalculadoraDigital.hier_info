@@ -1,0 +1,756 @@
+|CalculadoraDigital
+HEX0_DP <= <VCC>
+HEX1_DP <= <VCC>
+HEX2_DP <= <VCC>
+HEX4_DP <= <VCC>
+HEX3_DP <= <VCC>
+HEX5_DP <= <VCC>
+HEX6_DP <= <VCC>
+HEX7_DP <= <VCC>
+GPIO_1[0] <> teclado:inst.GPIO_1[0]
+GPIO_1[1] <> teclado:inst.GPIO_1[1]
+GPIO_1[2] <> teclado:inst.GPIO_1[2]
+GPIO_1[3] <> teclado:inst.GPIO_1[3]
+GPIO_1[4] <> teclado:inst.GPIO_1[4]
+GPIO_1[5] <> teclado:inst.GPIO_1[5]
+GPIO_1[6] <> teclado:inst.GPIO_1[6]
+GPIO_1[7] <> teclado:inst.GPIO_1[7]
+GPIO_1[8] <> teclado:inst.GPIO_1[8]
+GPIO_1[9] <> teclado:inst.GPIO_1[9]
+GPIO_1[10] <> teclado:inst.GPIO_1[10]
+GPIO_1[11] <> teclado:inst.GPIO_1[11]
+GPIO_1[12] <> teclado:inst.GPIO_1[12]
+GPIO_1[13] <> teclado:inst.GPIO_1[13]
+GPIO_1[14] <> teclado:inst.GPIO_1[14]
+GPIO_1[15] <> teclado:inst.GPIO_1[15]
+GPIO_1[16] <> teclado:inst.GPIO_1[16]
+GPIO_1[17] <> teclado:inst.GPIO_1[17]
+GPIO_1[18] <> teclado:inst.GPIO_1[18]
+GPIO_1[19] <> teclado:inst.GPIO_1[19]
+GPIO_1[20] <> teclado:inst.GPIO_1[20]
+GPIO_1[21] <> teclado:inst.GPIO_1[21]
+GPIO_1[22] <> teclado:inst.GPIO_1[22]
+GPIO_1[23] <> teclado:inst.GPIO_1[23]
+GPIO_1[24] <> teclado:inst.GPIO_1[24]
+GPIO_1[25] <> teclado:inst.GPIO_1[25]
+GPIO_1[26] <> teclado:inst.GPIO_1[26]
+GPIO_1[27] <> teclado:inst.GPIO_1[27]
+GPIO_1[28] <> teclado:inst.GPIO_1[28]
+GPIO_1[29] <> teclado:inst.GPIO_1[29]
+GPIO_1[30] <> teclado:inst.GPIO_1[30]
+GPIO_1[31] <> teclado:inst.GPIO_1[31]
+GPIO_1[32] <> teclado:inst.GPIO_1[32]
+GPIO_1[33] <> teclado:inst.GPIO_1[33]
+GPIO_1[34] <> teclado:inst.GPIO_1[34]
+GPIO_1[35] <> teclado:inst.GPIO_1[35]
+CLOCK_50 => teclado:inst.CLOCK_50
+CLOCK_50 => reg4bits:result_menor.CLK
+CLOCK_50 => reg4bits:num1.CLK
+CLOCK_50 => reg4bits:num2.CLK
+CLOCK_50 => reg4bits:operacao.CLK
+CLOCK_50 => reg4bits:result_maior.CLK
+HEX0[0] <= decoder7:bcd_menor.Out[0]
+HEX0[1] <= decoder7:bcd_menor.Out[1]
+HEX0[2] <= decoder7:bcd_menor.Out[2]
+HEX0[3] <= decoder7:bcd_menor.Out[3]
+HEX0[4] <= decoder7:bcd_menor.Out[4]
+HEX0[5] <= decoder7:bcd_menor.Out[5]
+HEX0[6] <= decoder7:bcd_menor.Out[6]
+KEY[2] => maq_estados:inst7.Reset
+KEY[2] => reg4bits:result_menor.ReSeT
+KEY[2] => reg4bits:num1.ReSeT
+KEY[2] => reg4bits:num2.ReSeT
+KEY[2] => reg4bits:operacao.ReSeT
+KEY[2] => reg4bits:result_maior.ReSeT
+HEX1[0] <= decoder7:bcd_maior.Out[0]
+HEX1[1] <= decoder7:bcd_maior.Out[1]
+HEX1[2] <= decoder7:bcd_maior.Out[2]
+HEX1[3] <= decoder7:bcd_maior.Out[3]
+HEX1[4] <= decoder7:bcd_maior.Out[4]
+HEX1[5] <= decoder7:bcd_maior.Out[5]
+HEX1[6] <= decoder7:bcd_maior.Out[6]
+HEX2[0] <= decod_sinal:inst9.display[0]
+HEX2[1] <= decod_sinal:inst9.display[1]
+HEX2[2] <= decod_sinal:inst9.display[2]
+HEX2[3] <= decod_sinal:inst9.display[3]
+HEX2[4] <= decod_sinal:inst9.display[4]
+HEX2[5] <= decod_sinal:inst9.display[5]
+HEX2[6] <= decod_sinal:inst9.display[6]
+HEX3[0] <= <VCC>
+HEX3[1] <= <VCC>
+HEX3[2] <= <VCC>
+HEX3[3] <= <VCC>
+HEX3[4] <= <VCC>
+HEX3[5] <= <VCC>
+HEX3[6] <= <VCC>
+HEX4[0] <= decoder7:inst11.Out[0]
+HEX4[1] <= decoder7:inst11.Out[1]
+HEX4[2] <= decoder7:inst11.Out[2]
+HEX4[3] <= decoder7:inst11.Out[3]
+HEX4[4] <= decoder7:inst11.Out[4]
+HEX4[5] <= decoder7:inst11.Out[5]
+HEX4[6] <= decoder7:inst11.Out[6]
+HEX5[0] <= <VCC>
+HEX5[1] <= <VCC>
+HEX5[2] <= <VCC>
+HEX5[3] <= <VCC>
+HEX5[4] <= <VCC>
+HEX5[5] <= <VCC>
+HEX5[6] <= <VCC>
+HEX6[0] <= decoder7:inst12.Out[0]
+HEX6[1] <= decoder7:inst12.Out[1]
+HEX6[2] <= decoder7:inst12.Out[2]
+HEX6[3] <= decoder7:inst12.Out[3]
+HEX6[4] <= decoder7:inst12.Out[4]
+HEX6[5] <= decoder7:inst12.Out[5]
+HEX6[6] <= decoder7:inst12.Out[6]
+HEX7[0] <= <VCC>
+HEX7[1] <= <VCC>
+HEX7[2] <= <VCC>
+HEX7[3] <= <VCC>
+HEX7[4] <= <VCC>
+HEX7[5] <= <VCC>
+HEX7[6] <= <VCC>
+LEDG[0] <= op[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] <= op[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[2] <= <GND>
+LEDG[3] <= <GND>
+LEDG[4] <= <GND>
+LEDG[5] <= <GND>
+LEDG[6] <= <GND>
+LEDG[7] <= <GND>
+LEDG[8] <= decod_2:inst10.s0
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= reg4bits:num2.Saida_reg[0]
+LEDR[10] <= reg4bits:num2.Saida_reg[1]
+LEDR[11] <= reg4bits:num2.Saida_reg[2]
+LEDR[12] <= reg4bits:num2.Saida_reg[3]
+LEDR[13] <= <GND>
+LEDR[14] <= reg4bits:num1.Saida_reg[0]
+LEDR[15] <= reg4bits:num1.Saida_reg[1]
+LEDR[16] <= reg4bits:num1.Saida_reg[2]
+LEDR[17] <= reg4bits:num1.Saida_reg[3]
+
+
+|CalculadoraDigital|teclado:inst
+GPIO_1[0] <> <UNC>
+GPIO_1[1] <> <UNC>
+GPIO_1[2] <> <UNC>
+GPIO_1[3] <> <UNC>
+GPIO_1[4] <> <UNC>
+GPIO_1[5] <> <UNC>
+GPIO_1[6] <> <UNC>
+GPIO_1[7] <> <UNC>
+GPIO_1[8] <> <UNC>
+GPIO_1[10] <> <UNC>
+GPIO_1[12] <> <UNC>
+GPIO_1[15] <> GPIO_1[15]
+GPIO_1[16] <> <UNC>
+GPIO_1[17] <> GPIO_1[17]
+GPIO_1[18] <> <UNC>
+GPIO_1[19] <> GPIO_1[19]
+GPIO_1[20] <> <UNC>
+GPIO_1[21] <> GPIO_1[21]
+GPIO_1[22] <> <UNC>
+GPIO_1[23] <> <UNC>
+GPIO_1[24] <> <UNC>
+GPIO_1[25] <> <UNC>
+GPIO_1[26] <> <UNC>
+GPIO_1[27] <> <UNC>
+GPIO_1[28] <> <UNC>
+GPIO_1[29] <> <UNC>
+GPIO_1[30] <> <UNC>
+GPIO_1[31] <> <UNC>
+GPIO_1[32] <> <UNC>
+GPIO_1[33] <> <UNC>
+GPIO_1[34] <> <UNC>
+GPIO_1[35] <> <UNC>
+CLOCK_50 => CLOCK_50.IN1
+tecla[0] <= controlador:U0.tecla
+tecla[1] <= controlador:U0.tecla
+tecla[2] <= controlador:U0.tecla
+tecla[3] <= controlador:U0.tecla
+ready <= controlador:U0.ready
+
+
+|CalculadoraDigital|teclado:inst|controlador:U0
+clk => clk.IN4
+linhaN[0] <= linha[0].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[1] <= linha[1].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[2] <= linha[2].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[3] <= linha[3].DB_MAX_OUTPUT_PORT_TYPE
+colunaN[0] => coluna[0].IN1
+colunaN[1] => coluna[1].IN1
+colunaN[2] => coluna[2].IN1
+colunaN[3] => coluna[3].IN1
+tecla[0] <= tecla[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[1] <= tecla[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[2] <= tecla[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[3] <= tecla[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ready <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|teclado:inst|controlador:U0|Debouncer:d0
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|teclado:inst|controlador:U0|Debouncer:d1
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|teclado:inst|controlador:U0|Debouncer:d2
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|teclado:inst|controlador:U0|Debouncer:d3
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|decoder7:bcd_menor
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|doubleDabble:inst6
+binario[0] => bcd[0].DATAIN
+binario[1] => LessThan5.IN8
+binario[1] => Add5.IN8
+binario[1] => bcd.DATAA
+binario[2] => LessThan3.IN8
+binario[2] => Add3.IN8
+binario[2] => bcd.DATAA
+binario[3] => LessThan2.IN8
+binario[3] => Add2.IN8
+binario[3] => bcd.DATAA
+binario[4] => LessThan1.IN8
+binario[4] => Add1.IN8
+binario[4] => bcd.DATAA
+binario[5] => LessThan0.IN6
+binario[5] => Add0.IN6
+binario[5] => bcd.DATAA
+binario[6] => LessThan0.IN5
+binario[6] => Add0.IN5
+binario[6] => bcd.DATAA
+binario[7] => LessThan0.IN4
+binario[7] => Add0.IN4
+binario[7] => bcd.DATAA
+bcd[0] <= binario[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[6] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[7] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|modulo_num:inst5
+numero[0] => modulo.DATAA
+numero[0] => Add0.IN16
+numero[1] => modulo.DATAA
+numero[1] => Add0.IN15
+numero[2] => modulo.DATAA
+numero[2] => Add0.IN14
+numero[3] => modulo.DATAA
+numero[3] => Add0.IN13
+numero[4] => modulo.DATAA
+numero[4] => Add0.IN12
+numero[5] => modulo.DATAA
+numero[5] => Add0.IN11
+numero[6] => modulo.DATAA
+numero[6] => Add0.IN10
+numero[7] => modulo.OUTPUTSELECT
+numero[7] => modulo.OUTPUTSELECT
+numero[7] => modulo.OUTPUTSELECT
+numero[7] => modulo.OUTPUTSELECT
+numero[7] => modulo.OUTPUTSELECT
+numero[7] => modulo.OUTPUTSELECT
+numero[7] => modulo.OUTPUTSELECT
+numero[7] => modulo.OUTPUTSELECT
+numero[7] => Add0.IN9
+modulo[0] <= modulo.DB_MAX_OUTPUT_PORT_TYPE
+modulo[1] <= modulo.DB_MAX_OUTPUT_PORT_TYPE
+modulo[2] <= modulo.DB_MAX_OUTPUT_PORT_TYPE
+modulo[3] <= modulo.DB_MAX_OUTPUT_PORT_TYPE
+modulo[4] <= modulo.DB_MAX_OUTPUT_PORT_TYPE
+modulo[5] <= modulo.DB_MAX_OUTPUT_PORT_TYPE
+modulo[6] <= modulo.DB_MAX_OUTPUT_PORT_TYPE
+modulo[7] <= modulo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|reg4bits:result_menor
+Saida_reg[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+ReSeT => inst2.ACLR
+ReSeT => inst3.ACLR
+ReSeT => inst1.ACLR
+ReSeT => inst.ACLR
+Informacao[0] => inst.DATAIN
+Informacao[1] => inst1.DATAIN
+Informacao[2] => inst3.DATAIN
+Informacao[3] => inst2.DATAIN
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst1.CLK
+CLK => inst.CLK
+Enable => inst2.ENA
+Enable => inst3.ENA
+Enable => inst1.ENA
+Enable => inst.ENA
+
+
+|CalculadoraDigital|decod_2:inst10
+num[0] => Equal0.IN1
+num[0] => Equal1.IN0
+num[0] => Equal2.IN1
+num[0] => Equal3.IN1
+num[1] => Equal0.IN0
+num[1] => Equal1.IN1
+num[1] => Equal2.IN0
+num[1] => Equal3.IN0
+s0 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+s1 <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+s2 <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+s3 <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|maq_estados:inst7
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst.ACLR
+Reset => inst1.ACLR
+ClockN => inst2.IN0
+EsperaIgual => inst.PRESET
+EsperaIgual => inst1.PRESET
+
+
+|CalculadoraDigital|seletor_clock:inst3
+ready => Decoder0.IN0
+valor[0] => Decoder0.IN4
+valor[1] => Decoder0.IN3
+valor[2] => Decoder0.IN2
+valor[3] => Decoder0.IN1
+estado[0] => Decoder0.IN6
+estado[1] => Decoder0.IN5
+relogio <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|ula:inst4
+num1[0] => Add0.IN4
+num1[0] => Add1.IN8
+num1[0] => Mult0.IN3
+num1[1] => Add0.IN3
+num1[1] => Add1.IN7
+num1[1] => Mult0.IN2
+num1[2] => Add0.IN2
+num1[2] => Add1.IN6
+num1[2] => Mult0.IN1
+num1[3] => Add0.IN1
+num1[3] => Add1.IN5
+num1[3] => Mult0.IN0
+num2[0] => Add0.IN8
+num2[0] => Mult0.IN7
+num2[0] => Add1.IN4
+num2[1] => Add0.IN7
+num2[1] => Mult0.IN6
+num2[1] => Add1.IN3
+num2[2] => Add0.IN6
+num2[2] => Mult0.IN5
+num2[2] => Add1.IN2
+num2[3] => Add0.IN5
+num2[3] => Mult0.IN4
+num2[3] => Add1.IN1
+operacao[0] => mux4:muxUla.selection[0]
+operacao[1] => mux4:muxUla.selection[1]
+resultado[0] <= mux4:muxUla.S[0]
+resultado[1] <= mux4:muxUla.S[1]
+resultado[2] <= mux4:muxUla.S[2]
+resultado[3] <= mux4:muxUla.S[3]
+resultado[4] <= mux4:muxUla.S[4]
+resultado[5] <= mux4:muxUla.S[5]
+resultado[6] <= mux4:muxUla.S[6]
+resultado[7] <= mux4:muxUla.S[7]
+
+
+|CalculadoraDigital|ula:inst4|mux4:muxUla
+d0[0] => S.DATAA
+d0[1] => S.DATAA
+d0[2] => S.DATAA
+d0[3] => S.DATAA
+d0[4] => S.DATAA
+d0[5] => S.DATAA
+d0[6] => S.DATAA
+d0[7] => S.DATAA
+d1[0] => S.DATAB
+d1[1] => S.DATAB
+d1[2] => S.DATAB
+d1[3] => S.DATAB
+d1[4] => S.DATAB
+d1[5] => S.DATAB
+d1[6] => S.DATAB
+d1[7] => S.DATAB
+d2[0] => S.DATAA
+d2[1] => S.DATAA
+d2[2] => S.DATAA
+d2[3] => S.DATAA
+d2[4] => S.DATAA
+d2[5] => S.DATAA
+d2[6] => S.DATAA
+d2[7] => S.DATAA
+d3[0] => S.DATAB
+d3[1] => S.DATAB
+d3[2] => S.DATAB
+d3[3] => S.DATAB
+d3[4] => S.DATAB
+d3[5] => S.DATAB
+d3[6] => S.DATAB
+d3[7] => S.DATAB
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[0] => S.OUTPUTSELECT
+selection[1] => S.OUTPUTSELECT
+selection[1] => S.OUTPUTSELECT
+selection[1] => S.OUTPUTSELECT
+selection[1] => S.OUTPUTSELECT
+selection[1] => S.OUTPUTSELECT
+selection[1] => S.OUTPUTSELECT
+selection[1] => S.OUTPUTSELECT
+selection[1] => S.OUTPUTSELECT
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|reg4bits:num1
+Saida_reg[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+ReSeT => inst2.ACLR
+ReSeT => inst3.ACLR
+ReSeT => inst1.ACLR
+ReSeT => inst.ACLR
+Informacao[0] => inst.DATAIN
+Informacao[1] => inst1.DATAIN
+Informacao[2] => inst3.DATAIN
+Informacao[3] => inst2.DATAIN
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst1.CLK
+CLK => inst.CLK
+Enable => inst2.ENA
+Enable => inst3.ENA
+Enable => inst1.ENA
+Enable => inst.ENA
+
+
+|CalculadoraDigital|demux4_4bits:inst2
+d0[0] <= d0.DB_MAX_OUTPUT_PORT_TYPE
+d0[1] <= d0.DB_MAX_OUTPUT_PORT_TYPE
+d0[2] <= d0.DB_MAX_OUTPUT_PORT_TYPE
+d0[3] <= d0.DB_MAX_OUTPUT_PORT_TYPE
+d1[0] <= d1.DB_MAX_OUTPUT_PORT_TYPE
+d1[1] <= d1.DB_MAX_OUTPUT_PORT_TYPE
+d1[2] <= d1.DB_MAX_OUTPUT_PORT_TYPE
+d1[3] <= d1.DB_MAX_OUTPUT_PORT_TYPE
+d2[0] <= d2.DB_MAX_OUTPUT_PORT_TYPE
+d2[1] <= d2.DB_MAX_OUTPUT_PORT_TYPE
+d2[2] <= d2.DB_MAX_OUTPUT_PORT_TYPE
+d2[3] <= d2.DB_MAX_OUTPUT_PORT_TYPE
+d3[0] <= d3.DB_MAX_OUTPUT_PORT_TYPE
+d3[1] <= d3.DB_MAX_OUTPUT_PORT_TYPE
+d3[2] <= d3.DB_MAX_OUTPUT_PORT_TYPE
+d3[3] <= d3.DB_MAX_OUTPUT_PORT_TYPE
+selection[0] => Equal0.IN1
+selection[0] => Equal1.IN0
+selection[0] => Equal2.IN1
+selection[0] => Equal3.IN1
+selection[1] => Equal0.IN0
+selection[1] => Equal1.IN1
+selection[1] => Equal2.IN0
+selection[1] => Equal3.IN0
+S[0] => d0.DATAB
+S[0] => d1.DATAB
+S[0] => d2.DATAB
+S[0] => d3.DATAB
+S[1] => d0.DATAB
+S[1] => d1.DATAB
+S[1] => d2.DATAB
+S[1] => d3.DATAB
+S[2] => d0.DATAB
+S[2] => d1.DATAB
+S[2] => d2.DATAB
+S[2] => d3.DATAB
+S[3] => d0.DATAB
+S[3] => d1.DATAB
+S[3] => d2.DATAB
+S[3] => d3.DATAB
+
+
+|CalculadoraDigital|reg4bits:num2
+Saida_reg[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+ReSeT => inst2.ACLR
+ReSeT => inst3.ACLR
+ReSeT => inst1.ACLR
+ReSeT => inst.ACLR
+Informacao[0] => inst.DATAIN
+Informacao[1] => inst1.DATAIN
+Informacao[2] => inst3.DATAIN
+Informacao[3] => inst2.DATAIN
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst1.CLK
+CLK => inst.CLK
+Enable => inst2.ENA
+Enable => inst3.ENA
+Enable => inst1.ENA
+Enable => inst.ENA
+
+
+|CalculadoraDigital|transformador_operacao:inst1
+dado[0] => Decoder1.IN3
+dado[1] => Decoder0.IN2
+dado[1] => Decoder1.IN2
+dado[2] => Decoder0.IN1
+dado[2] => Decoder1.IN1
+dado[3] => Decoder0.IN0
+dado[3] => Decoder1.IN0
+op_codificada[0] <= op_codificada.DB_MAX_OUTPUT_PORT_TYPE
+op_codificada[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|reg4bits:operacao
+Saida_reg[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+ReSeT => inst2.ACLR
+ReSeT => inst3.ACLR
+ReSeT => inst1.ACLR
+ReSeT => inst.ACLR
+Informacao[0] => inst.DATAIN
+Informacao[1] => inst1.DATAIN
+Informacao[2] => inst3.DATAIN
+Informacao[3] => inst2.DATAIN
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst1.CLK
+CLK => inst.CLK
+Enable => inst2.ENA
+Enable => inst3.ENA
+Enable => inst1.ENA
+Enable => inst.ENA
+
+
+|CalculadoraDigital|reg4bits:result_maior
+Saida_reg[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Saida_reg[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+ReSeT => inst2.ACLR
+ReSeT => inst3.ACLR
+ReSeT => inst1.ACLR
+ReSeT => inst.ACLR
+Informacao[0] => inst.DATAIN
+Informacao[1] => inst1.DATAIN
+Informacao[2] => inst3.DATAIN
+Informacao[3] => inst2.DATAIN
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst1.CLK
+CLK => inst.CLK
+Enable => inst2.ENA
+Enable => inst3.ENA
+Enable => inst1.ENA
+Enable => inst.ENA
+
+
+|CalculadoraDigital|decoder7:bcd_maior
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|decod_sinal:inst9
+MSbit => Decoder0.IN0
+display[0] <= <VCC>
+display[1] <= <VCC>
+display[2] <= <VCC>
+display[3] <= <VCC>
+display[4] <= <VCC>
+display[5] <= <VCC>
+display[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|decoder7:inst11
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CalculadoraDigital|decoder7:inst12
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
